@@ -1,0 +1,13 @@
+----- xxxxxxxxxxx --- TRICKS ---- CSS ---- xxxxxxxxxxx -----
+
+1. Setting text background as a a gradient:
+    a) First we need to set the background as a gradient.
+            background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+
+    b) Then we would use background clip property to be only visible where the text is present
+            -webkit-background-clip: text;                      /*new property*/
+    c) In Order to see the effect we need to change the text color to transparent.
+            color: transparent;
+2. create a border with a space around an image
+        a)set the one of the state of images with outline property
+        b)set the other state of the images with outline-offset property
