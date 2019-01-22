@@ -38,7 +38,7 @@
   transition: all .4s; }
 
 .btn--animated {
-  animation: moveInButton .5s ease-out .75s;
+  animation: moveInButton .5s ease-out .75s; 
   /*75s is delay*/
   animation-fill-mode: backwards;
   /*used to perform the 0% state before animation starts*/ }
