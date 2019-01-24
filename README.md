@@ -43,3 +43,19 @@
     This will allow the users to change the font-size manually.
 1. __Reset the after and before sudo elements[All*] too__  
     Along with the universal selector, also use before and after selectors to reset the margin and padding of the sudo elements as well.
+----
+# SASS/SCSS Notes
+
+## Color Functions
+|Property-name|use-case|values|
+|-------------|--------|------|
+|darken(color, percentage)| returns a darker color|base color & darkness percetage|
+|lighten(color, percentage)| returns a lighter color|base color & lightness percentage|
+
+
+## Mixins
+|Property-name|use-case|values|
+|-------------|--------|------|
+|@mixin <mixin_name>(<arg1,arg2..>)|Creates a mixin with arguments|__CSS Code__|
+
+1. Mixins could be imported using @include <mixin_name> command.

@@ -9,7 +9,9 @@
   "author": "avi asija",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.11.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "npm": "^6.7.0"
+  }
 }
