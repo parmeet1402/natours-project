@@ -43,6 +43,8 @@
     This will allow the users to change the font-size manually.
 1. __Reset the after and before sudo elements[All*] too__  
     Along with the universal selector, also use before and after selectors to reset the margin and padding of the sudo elements as well.
+1. __Partial Files and Imports__  
+    Partial files must start with an underscore and these files could be then later imported using @import.
 ----
 # SASS/SCSS Notes
 
@@ -59,3 +61,4 @@
 |@mixin <mixin_name>(<arg1,arg2..>)|Creates a mixin with arguments|__CSS Code__|
 
 1. Mixins could be imported using @include <mixin_name> command.
+1. 7 in 1
