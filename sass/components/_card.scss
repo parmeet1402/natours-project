@@ -5,6 +5,12 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
+
+
+
+
+
+
     &__side{
         height: 52rem;
         position: absolute;
@@ -167,4 +173,72 @@ margin-bottom: 8rem;
     font-size: 6rem;
     font-weight: 100;
 }
+
+
+@include respond(tab-port){
+    // Functionality
+    height: auto;
+    border-radius: 3px;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+
+    &__side{
+        height: auto;
+        position: relative;
+        box-shadow: none;
+
+        &--back{
+            transform: rotateY(0deg)        ;
+            -webkit-transform: rotateY(0deg)        ;
+            -moz-transform: rotateY(0deg)        ;
+            -ms-transform: rotateY(0deg)        ;
+            -o-transform: rotateY(0deg)        ;
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%)
+            
+        }
+
+
+    }
+    &:hover &__side--front
+        {
+        transform: rotateY(0deg)    ;
+        -webkit-transform: rotateY(0deg)    ;
+        -moz-transform: rotateY(0deg)    ;
+        -ms-transform: rotateY(0deg)    ;
+        -o-transform: rotateY(0deg)    ;
+}
+
+    &__details{
+        padding: 1rem 3rem;
+    }
+
+
+
+
+    // Back side styling
+    &__cta{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    padding: 1rem 4rem 4rem 4rem;
+}
+    &__price-box{
+    margin-bottom: 3rem;
+    }
+    &__price-value{
+    font-size: 4rem;
+    font-weight: 100;
+    }
+
+
+    }
+
+
 }
